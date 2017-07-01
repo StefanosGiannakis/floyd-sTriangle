@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+
+	int n= 0;
+	int i,j,k =1;
+	int num=1;
+
+	printf("Type your 'n' Number\n");
+	scanf("%d",&n);
+	while(n<0||n==0)
+	{
+		printf("Type your positive 'n' Number \n");
+		scanf("%d",&n);
+	}
+
+	for(i=1;i<=n;i++)
+	{
+		for(k=1;k<=i;k++)
+		{
+			printf("%d ",num);
+			num++;
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
